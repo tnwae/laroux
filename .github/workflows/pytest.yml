@@ -21,8 +21,8 @@ jobs:
     - name: Performing unit testing with coverage.py/pytest
       run: |
         coverage run --branch -m pytest && coverage xml
-    - name: Run codacy-coverage-reporter
-      uses: codacy/codacy-coverage-reporter-action@v1
-      with:
-        api-token: ${{ secrets.CODACY_API_TOKEN }}
-        coverage-reports: coverage.xml
+#    - name: Run codacy-coverage-reporter
+#      uses: codacy/codacy-coverage-reporter-action@v1
+#      with:
+#        api-token: ${{ secrets.CODACY_API_TOKEN }}
+#        coverage-reports: coverage.xml
