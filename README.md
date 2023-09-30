@@ -1,7 +1,5 @@
 # Welcome to Laroux
 
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/b99d68b5653145749a44bc171bf08dd1)](https://www.codacy.com/gh/waellison/laroux/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=waellison/laroux&amp;utm_campaign=Badge_Grade)
-[![Codacy Badge](https://app.codacy.com/project/badge/Coverage/b99d68b5653145749a44bc171bf08dd1)](https://www.codacy.com/gh/waellison/laroux/dashboard?utm_source=github.com&utm_medium=referral&utm_content=waellison/laroux&utm_campaign=Badge_Coverage)
 [![build](https://github.com/waellison/laroux/actions/workflows/pytest.yml/badge.svg)](https://github.com/waellison/laroux/actions/workflows/pytest.yml)
 [![CodeQL](https://github.com/waellison/laroux/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/waellison/laroux/actions/workflows/codeql-analysis.yml)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
