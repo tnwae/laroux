@@ -55,15 +55,10 @@ class LarouxCache(Generic[_K, _V]):
 
         Params:
         - new_size [int]: the new size of the cache.
-
-        Warning:
-          Does not truncate the cache if the new maximum size is smaller
-          than the previous maximum size.
         """
-
-        # TODO: If the new size is smaller than the previous size,
-        # truncate the cache accordingly.
         self._max_size = new_size
+        while len(self._cache_list) > new_size:
+            _ = self._cache_list.pop()
 
     def push(self, key: _K, value: _V) -> None:
         """Add a new element to a Laroux cache as a key-value pair.
