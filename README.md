@@ -1,7 +1,7 @@
 # Welcome to Laroux
 
 [![build](https://github.com/waellison/laroux/actions/workflows/pytest.yml/badge.svg)](https://github.com/waellison/laroux/actions/workflows/pytest.yml)
-[![CodeQL](https://github.com/waellison/laroux/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/waellison/laroux/actions/workflows/codeql-analysis.yml)
+[![CodeQL](https://github.com/waellison/laroux/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/waellison/laroux/actions/workflows/github-code-scanning/codeql)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![PyPI](https://img.shields.io/pypi/v/laroux)](https://pypi.org/project/laroux/)
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/laroux)
