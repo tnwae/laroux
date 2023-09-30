@@ -37,6 +37,17 @@ def test_add_and_retrieve():
     assert cache["bar"] == "b"
 
 
+def test_lru_function():
+    cache = LarouxCache[str, str](max_size=10)
+    cache.push("a", "foo")
+    cache.push("b", "bar")
+    cache.push("c", "baz")
+    _ = cache["a"]
+    assert cache.peek() == "foo"
+    _ = cache["b"]
+    assert cache.peek() == "bar"
+
+
 def test_eviction():
     cache = LarouxCache[str, int](max_size=3)
     ltr = ["a", "b", "c"]
@@ -61,9 +72,9 @@ def test_new_list_is_empty():
 
 
 def test_stringize_list_node():
-    lst = _LarouxCacheList[str, str]()
-    lst.push("a", "foo")
-    assert str(lst.peek()) == "foo"
+    lst = _LarouxCacheList[str, int]()
+    lst.push("a", 42)
+    assert str(lst.peek()) == "42"
 
 
 def test_list_size_set_correctly_on_add():
